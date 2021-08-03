@@ -1,0 +1,929 @@
+body{
+    /* background-color: rgb(11, 1, 71); */
+    background-image: url(https://cdn.pixabay.com/photo/2021/05/23/05/02/origami-6275164_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* PLAYSTATION SECTION for Smaller devices */
+
+.Playstation{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 999;
+}
+.Playstation i{
+    font-size: 1.5rem;
+    color: darkorchid;
+}
+
+
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+/* NAVIGATION    SECTION */
+
+nav{
+    /* background-image: linear-gradient(180deg,rgba(255, 192, 203, 0.527),transparent), url(https://cdn.pixabay.com/photo/2021/05/23/05/02/origami-6275164_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, .8),transparent);
+    /* rgba(255, 192, 203, 0.527) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    z-index: 99;
+    height: 10vh;
+}
+
+.Container{
+    width: 4rem;
+    height: 4rem;
+    display: inline-block;
+}
+
+
+.Container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+.Zoom{
+    animation: rotate .6s linear infinite;
+}
+
+#CompanyName{
+    vertical-align:27px;
+}
+
+#Favourites a{
+    text-decoration: none;
+    color: white;
+     
+}
+
+#Favourites{
+    animation: zoom .5s linear infinite alternate;
+}
+
+#Favourites a:hover{
+    color: wheat;
+}
+
+#form{
+    width: 20%;
+    position: relative;
+}
+
+
+
+#form input{
+    width :100%;
+    font-size: 1rem;
+    padding: 8px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border: none;
+    border-radius: 1rem 1rem 1rem 1rem/50% 50% 50% 50%;
+    text-align: center;
+}
+
+
+
+#form input:focus{
+    outline: none;
+}
+
+
+.t2,.t1{
+    position: absolute;
+    color: black;
+}
+
+.t1{
+    left: 3%;
+    top: 30%;
+}
+.t2{
+    right: 0%;
+    top: 30%;
+}
+
+#bell{
+    color: Yellow;
+    font-size:2rem ;
+    animation: ring .4s linear infinite ;
+}
+
+.bars{
+    display:none;
+}
+
+.bars i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#Device-Bar{
+    display: none;
+    z-index: 2;
+}
+
+#Device-Bar i{
+    color: gray;
+    font-size: .9rem;
+    margin: .1rem;
+}
+
+#Device-Bar div{
+    margin: .3rem;
+}
+
+.bars:hover  #Device-Bar{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    right: 2%;
+    background-color: white;
+    padding: 1rem;
+}
+
+
+#Device-Bar div:hover{
+    color: darkgrey;
+}
+
+
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+/* MAIN SECTION*/
+
+
+main{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 85vh;
+ }
+
+
+#MainSection{
+    width: 70%;
+    overflow: scroll;
+    height: 85vh;
+}
+
+
+#QueueSection{
+    overflow: none;
+    margin-left: 3%;
+    height: 78vh;
+    position: relative;
+}
+
+
+#MainSection::-webkit-scrollbar,#QueueSection::-webkit-scrollbar,.Sec2::-webkit-scrollbar{
+    display: none;
+}
+
+
+#Display{
+    margin-top: 3%;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 5%;
+}
+
+#divA{
+    position: relative;
+    width: 42%;
+    height: 200px;
+    left: 5%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    border-radius: 1rem;
+   
+    transition: all .3s ease-in-out;
+}
+
+
+
+#divC{
+    width: 42%;
+    height: 200px;
+    position: relative;
+    left: -5%;
+    background-image: url(https://cdn.pixabay.com/photo/2015/02/06/22/08/microphone-626618_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+#divB{
+    width: 42%;
+    height: 200px;
+    position: relative;
+    left: 0%;
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/21/15/18/musician-349790_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    border-radius: 1rem;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+#divA:hover,#divB:hover,#divC:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+#divD{
+    display: none;
+    height: 40vh;
+    width: 90%;
+}
+
+#divD img{
+    width: 100%;
+    height: 100%;
+}
+
+#QueueSection{
+    width: 25%;
+    
+}
+
+
+/* LATEST RELEASE */
+.Heading{
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.Sec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.L{
+    width: 47%;
+    border: 1px solid transparent;
+    height: 6rem;
+    margin-bottom: 1%;
+    position: relative;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+.d1 img{
+    width: 6rem;
+    height: 6rem;
+}
+
+.d2{
+    width: 45%;
+    font-size: 1rem;
+    margin: auto 10%;
+}
+
+.Head{
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.d3{
+    position: absolute;
+    right: 0;
+}
+
+
+.d3 i{
+    transform: rotate(90deg);
+    font-size: 1rem;
+    position: absolute;
+    right: 20%;
+}
+
+.d3 a{
+    text-decoration: none;
+    color: white;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ #cover{
+    display: flex;
+    border: 2px solid darkslateblue;
+    background-color:rgba(17, 103, 202, 0.788);
+}
+
+#cover{
+    width: max-content;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    padding: 5px;
+    display: none;
+
+}
+
+
+#cover hr{
+    width: 100%;
+    color: white;
+}
+
+
+.L:hover{
+    border:1px solid violet;
+}
+
+.d1 i{
+    position: absolute;
+    left: 2%;
+    font-size: 6rem;
+    color: transparent;
+}
+
+.d1:hover i{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Popular artist */
+
+.artist{
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.artist img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.artist div{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.artist i{
+    position: absolute;
+    color: transparent;
+    left: 0;
+}
+
+.cirr{
+    position: absolute;
+    background-color: transparent;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    border-radius: 50%;
+
+}
+
+.artist:hover i{
+    color: rgba(255, 255, 255,.8);
+}
+
+.artist:hover .cirr{
+    background-color: rgba(128, 128, 128,.6);
+}
+
+
+.stations{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(90deg,pink,orange,yellow);
+    position: relative;
+    padding : 1rem;
+    box-sizing: border-box;
+}
+
+#Deco{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Yellow{
+    background-color: yellow;
+    width: 12vw;
+    height: 8vw;
+    z-index: 0;
+}
+
+.red{
+    background-color: red;
+    position: relative;
+    left: 1vw;
+    width: 8vw;
+    height: 12vw;
+    z-index: 2;
+    top: -1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.red div{
+    height: 6vw;
+    width: 6vw;
+    animation: vibrate .2s linear infinite;
+}
+
+.red p{
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.red div img{
+    height: 100%;
+    width: 100%;
+}
+
+ .Green{
+    background-color: greenyellow;
+    position: relative;
+    left: 1vw;
+    width: 10vw;
+    height: 10vw;
+    top: -1vw;
+    z-index: 1; 
+ }
+
+#Mood{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Mood div{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+}
+
+#Mood div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#Mood p{
+    
+    font-weight: 100;
+    font-size: 1.5rem;
+    
+}
+
+#Aa{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/chill.jpg);
+    background-size: contain;
+}
+
+#Bb{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/Rock.webp);
+    background-size: cover;
+}
+
+#Cc{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/Love.webp);
+    background-size: cover;
+}
+
+#Dd{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/Pop.webp);
+    background-size: cover;
+}
+
+#Ee{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/retro.webp);
+    background-size: cover;
+}
+
+#Ff{
+    background-image: linear-gradient(100deg,rgba(255, 192, 203, 0.4),rgba(157, 223, 250, 0.4)),url(Images/Gym.webp);
+    background-size: cover;
+}
+
+#Aa:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/chill.jpg);
+    background-size: cover;
+}
+
+#Bb:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/Rock.webp);
+    background-size: cover;
+}
+
+#Cc:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/Love.webp);
+    background-size: cover;
+}
+
+#Dd:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/Pop.webp);
+    background-size: cover;
+}
+
+#Ee:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/retro.webp);
+    background-size: cover;
+}
+
+#Ff:hover{
+    background: linear-gradient(100deg,rgba(255, 1, 179, 0.4),rgba(236, 250, 157, 0.4)),url(Images/Gym.webp);
+    background-size: cover;
+}
+
+
+/* Cards----------------------------------- */
+
+.cards{
+    width: 14rem;
+    height: 12rem;
+    /* border: 1px solid black; */
+    margin: .5vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+
+.cards:hover img{
+    width: 17rem;
+    height: 14rem;
+}
+
+.cards p{
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+/* Latest Hindi And English */
+
+.lan > div{
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.lan > div img{
+    width: 100%;
+    height: 100%;
+}
+
+.lan >div:hover{
+    box-shadow: 0px 0px 1.2vw white;
+}
+
+
+
+
+/* QueueSection */
+
+.close{
+    display: none;
+}
+
+.Sec2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 10vh;
+    overflow: scroll;
+    height: 65vh;
+}
+
+.Sec2 > div{
+    width: 90%;
+    border: 1px solid transparent;
+    padding: .3vw;
+    height: auto;
+    margin-bottom: .2vw;
+    position: relative;
+}
+
+.Sec2 > div:hover{
+    border: 1px solid violet;
+}
+
+.Sec2>div:hover .Heart{
+    color: red;
+}
+
+.LL{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+
+.Box{
+    width: 6rem;
+    height: 6rem;
+    margin-left: .4vw;
+    margin-right: .4vw;
+}
+
+.Box img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.Heart{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transition: .7s all;
+}
+
+#QueueSection section{
+    position: absolute;
+    top: 1vw;
+    right: 0;
+}
+
+#QueueSection section > a{
+    text-decoration: none;
+    color: darkviolet;
+}
+
+#Tar{
+    width: max-content;
+    height: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: turquoise;
+    transform: scale(0);
+    animation: .4s all;
+}
+
+#Tar a{
+    text-decoration: none;
+    color: red;
+}
+
+#Tar:target{
+    transform: scale(1.0);
+}
+
+#Tar hr{
+    width: 100%;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(8, 6, 6, 0.9);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom:-12vh;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#Aaa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+#flex1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#flex1 > i{
+    margin: 15px;
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+}
+
+#flex2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 4px;
+}
+
+
+#Scroll{
+    width: 90%;    
+}
+
+#flex2 span{
+    font-size: .8rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Bbb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    font-size: .9rem;
+}
+
+#Ccc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+
+#Ccc input{
+    width: 30%;
+    font-size: .5rem;
+}
+
+/* Section With flext and Justify content center */
+.Cent{
+    display: flex;
+    justify-content: center;
+}
+
+.mb70{
+    margin-bottom: 70px;
+}
+
+
+
+@media screen and (max-width:900px){
+    #Favourites,#form,#Deco,#bell,.user{
+        display: none;
+    }
+    #QueueSection{
+        display: none;
+    }
+    #MainSection{
+        width:100%;
+    }
+    .L{
+        width: 95%;
+    }
+    #Mood{
+        width: 100%;
+    }
+
+    .lan > div{
+        width: 6.5rem;
+        height: 6.5rem;       
+    }
+   
+    .bars{
+        display: block;
+        margin-right: 3%;
+    }
+    .Playstation{
+        display: block;
+    }
+    #QueueSection:target{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        width: max-content;
+        background-color: rgba(141, 12, 141,.9);
+        height: max-content;
+        z-index: 1000;
+    }
+
+    #QueueSe{
+        display: none;
+    }
+    .Sec2{
+        height: 50vh;
+        margin-top: 5vh;
+    }
+
+
+    .close{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+    }
+
+    .close i{
+        color: darkred;
+    }
+
+    .Box{
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    #divD{
+        display: block;
+        background-color: rebeccapurple;
+    }
+    #divC{
+        display: none;
+    }
+
+    #divA{
+        width: 48%;
+    }
+    #divB{
+        width: 48%;
+    }
+}
